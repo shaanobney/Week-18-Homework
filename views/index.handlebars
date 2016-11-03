@@ -142,8 +142,14 @@ $(document).ready(function() {
 });
 </script>
 <script>
-$('.stock-quote').stockQuotes();
-
+$('.stock-quote').stockQuotes({
+  changeClass: 'change', // css class for change arrow
+  quoteClass: 'quote', // css class for quote
+  precision: 2, // decimal precision of change
+  includeSymbol: true // if the symbol should be added to the output
+});
+</script>
+<script>
 var monthNames = [ "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December" ];
 var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
