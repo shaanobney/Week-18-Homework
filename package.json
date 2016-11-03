@@ -1,13 +1,17 @@
 {
-  "name": "",
-  "version": "5.0.0",
-  "description": "Scrapes NYT site for stories",
+  "name": "scrape",
+  "version": "1.0.0",
+  "description": "webscraper",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js"
+    "start": "node server.js"
   },
-  "author": "S.O.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaanobney/Week-18-Homework.git"
+  },
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -17,5 +21,12 @@
     "mongojs": "^2.4.0",
     "mongoose": "^4.6.0",
     "request": "^2.69.0"
-  }
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/shaanobney/Week-18-Homework/issues"
+  },
+  "homepage": "https://github.com/shaanobney/Week-18-Homework#readme"
 }
