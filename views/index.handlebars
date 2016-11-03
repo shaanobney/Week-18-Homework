@@ -122,7 +122,6 @@
 </ul>
 </nav>
 </footer>
-<script src="javascript/openWeather.js"></script>
 <script>
 var monthNames = [ "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December" ];
@@ -131,11 +130,6 @@ var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satu
 var newDate = new Date();
 newDate.setDate(newDate.getDate());
 $('#date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
-
-$('.weather-temperature').openWeather({
-    city: 'Toronto,ON'
-});
-
 </script>
 
 </body>
