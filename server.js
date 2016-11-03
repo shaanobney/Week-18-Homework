@@ -148,5 +148,5 @@ app.post('/remove/:id', function(req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log(“Listening on port %d in %s mode", this.address().port, app.settings.env);
+  console.log("Listening on port %d in %s mode", this.address().port, app.settings.env);
 });
