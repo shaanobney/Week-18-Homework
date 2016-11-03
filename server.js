@@ -20,7 +20,7 @@ var mongoose = require('mongoose');
 var ObjectId = require('mongojs').ObjectID;
 
 // DATABASE
-mongoose.connect('mongodb://localhost/scraper');
+mongoose.connect('mongodb://heroku_m9rc63qm:39k60dnmfimg9c1qr13jurg5vn@ds143707.mlab.com:43707/heroku_m9rc63qm');
 var db = mongoose.connection;
 
 db.on('error', function(err) {
