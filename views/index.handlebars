@@ -142,11 +142,13 @@ $(document).ready(function() {
 });
 </script>
 <script>
-$('.stock-quote').stockQuotes({
-  changeClass: 'change', // css class for change arrow
-  quoteClass: 'quote', // css class for quote
-  precision: 2, // decimal precision of change
-  includeSymbol: true // if the symbol should be added to the output
+$(document).ready(function () {
+  $('.stock-quote').stockQuote({
+    changeClass: 'change', // css class for change arrow
+    quoteClass: 'quote', // css class for quote
+    precision: 2, // decimal precision of change
+    includeSymbol: true // if the symbol should be added to the output
+  });
 });
 </script>
 <script>
