@@ -1,0 +1,240 @@
+@font-face {
+  font-family: basic;
+  src: url("../fonts/basic.ttf");
+}
+@font-face {
+  font-family: robo;
+  src: url("../fonts/roboli.ttf");
+}
+@font-face {
+  font-family: code;
+  src: url("../fonts/code.otf");
+}
+@font-face {
+  font-family: symbol;
+  src: url("../fonts/symbol.ttf");
+}
+@font-face {
+  font-family: spray;
+  src: url("../fonts/spray.ttf");
+}
+
+#comment {
+  background-color: white;
+  font-family: robo;
+  color: black;
+	width: 200px;
+}
+
+#comment-holder {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.comms {
+  font-family: code;
+  font-size: 1.1em;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+#prev {
+  font-family: basic;
+}
+
+.number {
+  font-family: symbol;
+}
+
+.trollist {
+  margin: 2%;
+  font-family: code;
+}
+
+#paint {
+	-ms-transform: rotate(-15deg); /* IE 9 */
+  -webkit-transform: rotate(-15deg); /* Safari */
+  transform: rotate(-10deg); /* Standard syntax */
+	position: absolute;
+	left: 55%;
+	top: 40%;
+	font-size: 70px;
+	color: red;
+	font-family: spray;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 15px;
+	border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 8px;
+}
+
+button {
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  /*background-color: #222;*/
+}
+
+#next {
+  padding-top: 6px;
+  background-color: transparent;
+  color: black;
+}
+
+#post {
+  font-family: basic;
+  padding-top: 6px;
+  background-color: transparent;
+  color: black;
+}
+
+#prev {
+  padding-top: 6px;
+  background-color: transparent;
+  color: black;
+}
+
+input {
+	padding: 6px 8px;
+	border: 1px solid black;
+  font-family: basic;
+}
+
+#comment-holder>p {
+	margin-top: 0;
+  font-family: robo;
+}
+
+#headli {
+	width: 75%;
+	position: absolute;
+	font-family: code;
+  font-size: 1.0em;
+	line-height: 1.2;
+  top: 15%;
+  left: 25%;
+}
+
+#picture {
+	width: 75px;
+	height: 75px;
+}
+
+#wrapper {
+	width: 1600px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#bug {
+	width: 50%;
+	margin: 0;
+	color: black;
+	background-color: black;
+}
+
+.basic {
+  font-family: basic;
+}
+
+#buttz {
+  position: absolute;
+  bottom: 20px;
+}
+
+#rapper {
+  margin: 10px auto;
+}
+
+#blurble {
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 2%;
+  font-family: robo;
+}
+
+#buttons {
+	width: 400px;
+  background-color: transparent;;
+}
+
+#content {
+  width: 400px;
+  height: 235px;
+  color: black;
+  background-color: white;
+	position: relative;
+  margin: 0 auto;
+}
+
+#ding {
+	width: 400px;
+}
+
+#dong {
+	width: 400px;
+	height: 170px;
+	overflow: scroll;
+}
+
+.fa {
+  color: red;
+}
+
+.jumbotron {
+  width: 970px;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.page-footer {
+  border-top: 1px solid #e2e2e2;
+  padding-top: 7px;
+  padding-top: 9px;
+  margin: 0 auto;
+  position: relative;
+  width: 970px;
+}
+
+hr {
+  width: 970px;
+}
+#ny {
+	width: 50%;
+}
+
+.number {
+	font-size: 20px;
+}
+
+.comments {
+  margin-bottom: 5px;
+	background: white;
+	overflow: auto;
+}
