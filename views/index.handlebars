@@ -19,8 +19,10 @@
   </a></h2>
   <div id="paint">SCRAPER</div>
   <ul class="masthead-menu">
-    <li id="date"></li><li class="todays-paper"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="todays-paper">Today’s Paper</a></li><li class="video"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="video">Video</a></li><li id="weather" class="weather" data-collection="weather">
-    <button class="button weather-button"><i class="icon sprite-icon weather-icon icon-weather-01 w24"></i></button></li><li id="markets" class="markets" data-collection="markets"><button data-collection="markets" class="button markets-button is-negative">Nasdaq <span>-0.66%</span><i class="icon sprite-icon ticker-icon"></i></button></li>
+    <li id="date"></li><li class="todays-paper"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="todays-paper"><i class="icon sprite-icon"></i>Today’s Scraper</a></li>
+    <li class="video"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="video">Video</a></li>
+    <li id="weather" class="weather" data-collection="weather"><button class="button weather-button"><i class="icon sprite-icon weather-icon icon-weather-01 w24"><div class="weather-temperature"></div></i></button></li>
+    <li id="markets" class="markets" data-collection="markets"><button data-collection="markets" class="button markets-button is-negative">Nasdaq <span>-0.66%</span><i class="icon sprite-icon ticker-icon"></i></button></li>
   </ul>
   </div>
   <nav id="mini-navigation" class="mini-navigation">
@@ -128,6 +130,11 @@ var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satu
 var newDate = new Date();
 newDate.setDate(newDate.getDate());
 $('#date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+$('.weather-temperature').openWeather({
+    city: 'Los Angeles,CA'
+});
+
 </script>
 
 </body>
