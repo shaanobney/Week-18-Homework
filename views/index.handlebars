@@ -21,7 +21,7 @@
   <ul class="masthead-menu">
     <li id="date"></li><li class="todays-paper"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="todays-paper"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span></i>Today’s Scraper</a></li>
     <li class="video"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="video">Video</a></li>
-    <li id="weather" class="weather-temperature"><div id="weather"></div></i></button></li>
+    <li id="weat"><div id="weather"></div></i></button></li>
     <li id="markets" class="markets" data-collection="markets"><button data-collection="markets" class="button markets-button is-negative">Nasdaq <span>-0.66%</span><i class="icon sprite-icon ticker-icon"></i></button></li>
   </ul>
   </div>
@@ -122,7 +122,6 @@
 </ul>
 </nav>
 </footer>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 <script>
 $(document).ready(function() {
   $.simpleWeather({
