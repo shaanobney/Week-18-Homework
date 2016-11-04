@@ -11,7 +11,7 @@ var ScrapedDataSchema = Schema({
     },
     imgURL: {
         type: String,
-        required: true
+        required: false
     },
     synopsis: {
         type: String,
