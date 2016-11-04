@@ -23,7 +23,7 @@
     <li id="todaysWeather" class="weather" data-collection="weather"></li>
     <li class="todays-paper"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="todays-paper"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span></i>  Today’s Scraper</a></li>
     <li class="video"><a href="https://whispering-fjord-19584.herokuapp.com/" data-collection="video">Video</a></li>
-    <li id="markets" class="markets" data-collection="markets">Nasdaq <span class="stock-quote" data-symbol=“GOOGL”></span><i class="icon sprite-icon ticker-icon"></i></li>
+    <li id="markets" class="markets" data-collection="markets">Nasdaq <span class="stock-quote" data-symbol="GOOGL"></span><i class="icon sprite-icon ticker-icon"></i></li>
   </ul>
   </div>
   <nav id="mini-navigation" class="mini-navigation">
@@ -76,6 +76,7 @@
             </ul>
 </nav>
 <div class="jumbotron">
+  <span class="stock-quote" data-symbol="TWTR"></span>
   <div id="content">
     <a class="articleURL" href="{{ this.articleURL }}">
       <div id="picture">
@@ -141,6 +142,12 @@ $(document).ready(function() {
 });
 </script>
 <script>
+$('.stock-quote').stockQuotes({
+  changeClass: 'change', // css class for change arrow
+  quoteClass: 'quote', // css class for quote
+  precision: 2, // decimal precision of change
+  includeSymbol: true // if the symbol should be added to the output
+});
 $(document).ready(function () {
   $('.stock-quote').stockQuote({
     changeClass: 'change', // css class for change arrow
