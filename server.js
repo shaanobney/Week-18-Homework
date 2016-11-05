@@ -30,7 +30,7 @@ db.on('error', function(err) {
 // MODELS FOR DATA
 var ScrapedData = require('./nytScrapeModel');
 
-// ON START BEGIN SCRAP
+// ON START BEGIN SCRAPE
 var options = {
   url: 'http://www.nytimes.com/pages/world/index.html',
 };
