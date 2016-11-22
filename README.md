@@ -1,5 +1,4 @@
-Read Me
--------------
+
 # [New York Times Article Scraper](https://whispering-fjord-19584.herokuapp.com/ "NYT Article Scraper")
 **Overview**
 -------------
